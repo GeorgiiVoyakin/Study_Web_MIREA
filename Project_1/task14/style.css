@@ -1,0 +1,12 @@
+body {
+  background-color: grey;
+}
+
+div {
+  text-align: center;
+  margin-top: 25vh;
+}
+
+iframe {
+  border: 10px solid #ECEC1B;
+}

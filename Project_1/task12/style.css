@@ -1,0 +1,12 @@
+body {
+  background-color: grey; 
+}
+
+video {
+  width: 50vw;
+  height: 50vh
+}
+
+div {
+  text-align: center;
+}

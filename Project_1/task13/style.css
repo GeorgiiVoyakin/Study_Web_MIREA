@@ -1,0 +1,21 @@
+.first {
+  color: blue;
+  font-family: sans-serif;
+  text-shadow: 1px 0px 5px rgba(255, 150, 150, 1);
+  font-size: large;
+}
+
+.second {
+  color: red;
+  margin-left: 5vw;
+  font-style: italic;
+  font-size: x-large;
+}
+
+.third {
+  display: inline-block;
+  color: green;
+  margin-left: 10vw;
+  font-family: Georgia, serif;
+  background-color: yellow;
+}
