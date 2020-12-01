@@ -16,4 +16,7 @@ Work not finished.
 Work finished.
 
 ## Project_6
-Work not finished. All tasks accepted.
+Work finished.
+
+## Project_7
+Work not finished.
