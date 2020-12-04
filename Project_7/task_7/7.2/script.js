@@ -1,10 +1,16 @@
-var i = 0;
-
 function start() {
-  while (true) {
-    setTimeout(console.log(i++), 10000);
-  }
+  window.timer = window.setInterval(counter, 1000);
+  document.getElementsByName('start')[0].disabled = true;
+  document.getElementsByName('stop')[0].disabled = false;
 }
 
 function stop() {
+  window.clearInterval(window.timer);
+  document.getElementsByName('start')[0].disabled = false;
+  document.getElementsByName('stop')[0].disabled = true;
+}
+
+function counter() {
+  let elem = document.getElementById('output');
+  elem.innerHTML = parseInt(elem.innerHTML) + 1;
 }

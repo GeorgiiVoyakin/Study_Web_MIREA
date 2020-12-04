@@ -1,8 +1,9 @@
-var i = 0;
-
 function start() {
-  while (i < 1000) {
-    document.getElementById("output").innerHTML = i++;
-  }
+  document.getElementsByTagName('button')[0].disabled = true;
+  window.setInterval(counter, 1000);
+}
 
+function counter() {
+  let elem = document.getElementById('output');
+  elem.innerHTML = parseInt(elem.innerHTML) + 1;
 }
