@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>task_2</title>
+    <script>
+    function animate(options) {
+
+      var start = performance.now();
+
+      requestAnimationFrame(function animate(time) {
+        // timeFraction от 0 до 1
+        var timeFraction = (time - start) / options.duration;
+        if (timeFraction > 1) timeFraction = 1;
+
+        // текущее состояние анимации
+        var progress = options.timing(timeFraction)
+
+        options.draw(progress);
+
+        if (timeFraction < 1) {
+          requestAnimationFrame(animate);
+        }
+
+      });
+    }
+    </script>
+  </head>
+  <body>
+    <textarea id="textarea" rows="8" cols="80">C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off.</textarea>
+    <button type="button" name="button" onclick="animation(textarea)">Start animation</button>
+    <script>
+    function bounce(timeFraction) {
+      for (let a = 0, b = 1;; a += b, b /= 2) {
+        if (timeFraction >= (7 - 4 * a) / 11) {
+        return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+        }
+      }
+    }
+
+    function animation(textArea) {
+      let text = textArea.value;
+      let to = text.length,
+      from = 0;
+        animate({
+          duration: 7000,
+          timing: bounce,
+        draw: function(progress) {
+          let result = (to - from) * progress + from;
+          textArea.value = text.substr(0, Math.floor(result))
+        }
+      });
+    }
+    </script>
+  </body>
+</html>

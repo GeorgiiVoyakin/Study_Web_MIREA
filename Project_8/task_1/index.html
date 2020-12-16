@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>task_1</title>
+    <style>
+      #transport {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="unicycle.svg" alt="unicycle" id="transport" height="100">
+    <script type="text/javascript">
+      transport.onclick = function animation() {
+        let start = Date.now();
+        let timer = setInterval(function() {
+          let timePassed = Date.now() - start;
+          transport.style.left = timePassed / 5 + 'px';
+          if (timePassed > 2000)
+          clearInterval(timer);
+        }, 20);
+      }
+    </script>
+  </body>
+</html>
