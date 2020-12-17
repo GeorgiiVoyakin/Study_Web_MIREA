@@ -13,7 +13,7 @@ Work not finished.
 Work not finished.
 
 ## Project_5
-Work finished.
+Work accepted.
 
 ## Project_6
 Work accepted.
@@ -22,4 +22,4 @@ Work accepted.
 Work not finished.
 
 ## Project_8
-Work finished.
+Work accepted.
