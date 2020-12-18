@@ -19,7 +19,7 @@ Work accepted.
 Work accepted.
 
 ## Project_7
-Work not finished.
+Work accepted.
 
 ## Project_8
 Work accepted.
