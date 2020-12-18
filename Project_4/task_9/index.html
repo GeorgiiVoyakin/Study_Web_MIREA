@@ -2,9 +2,49 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>task_9</title>
+    <style>
+    button {
+      width: 100px;
+      height: 30px;
+    }
+      #a {
+        box-shadow: inset 0px 0px 10px 1px black;
+        background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)
+
+      }
+      #a:hover {
+        transform: rotateX(90deg);
+        transition: 1s;
+      }
+
+      #b {
+        color: white;
+        background: blue;
+        box-shadow:inset -2px -2px 8px 0px black;
+      }
+
+      #b:hover {
+
+        transform: skewX(15deg);
+        transition: 2s;
+      }
+
+      #c {
+        background-color: yellow;
+        box-shadow:  inset 0px 0px 20px rgba(0, 0, 255, 1);
+      }
+
+      #c:hover {
+
+        transform: scale(1.5);
+        transition: 3s;
+      }
+    </style>
   </head>
   <body>
-
+    <button type="button" name="button" id="a">Кнопка 1</button>
+    <button type="button" name="button" id="b">Кнопка 2</button>
+    <button type="button" name="button" id="c">Кнопка 3</button>
   </body>
 </html>

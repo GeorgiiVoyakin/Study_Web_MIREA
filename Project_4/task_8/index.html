@@ -2,9 +2,51 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>task_8</title>
+    <style>
+      div {
+        width: 150px;
+        margin-right: 50px;
+        float: left;
+      }
+
+      #a {
+        background-color: red;
+      }
+
+      #a:hover {
+        transform: scaleY(1.5);
+      }
+
+      #b {
+        background-color: green;
+      }
+
+      #b:hover {
+        transform: skewY(20deg);
+      }
+
+      #c {
+        background-color: blue;
+        color: white;
+      }
+
+      #c:hover {
+        transform: rotate(20deg);
+      }
+    </style>
   </head>
   <body>
+    <div id="a">
+      <p>Какой-то текст</p>
+    </div>
 
+    <div id="b">
+      <p>Ещё текст</p>
+    </div>
+
+    <div id="c">
+      <p>И напоследок тоже текст</p>
+    </div>
   </body>
 </html>

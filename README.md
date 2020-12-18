@@ -4,13 +4,13 @@
 Work accepted.
 
 ## Project_2
-Work not finished.
+Work accepted.
 
 ## Project_3
-Work not finished.
+Work accepted.
 
 ## Project_4
-Work not finished.
+Work accepted.
 
 ## Project_5
 Work accepted.
