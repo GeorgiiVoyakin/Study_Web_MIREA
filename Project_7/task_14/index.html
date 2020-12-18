@@ -2,9 +2,36 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>task_14</title>
+    <style>
+      #contents {
+        padding: 5px;
+        border: 1px green solid;
+      }
+    </style>
   </head>
   <body>
+    <fieldset id="contents">
+    <legend>#contents</legend>
+    <p>
+      Ссылка на лучший в мире сайт <a href="https://lizochekk.jimdofree.com/">link</a>
+    </p>
+    </fieldset>
 
+    <script>
+      contents.onclick = function(event) {
+
+        function handleLink(href) {
+          let isLeaving = confirm(`Точно хотите покинуть сайт и перейти на ${href}?`);
+          if (!isLeaving) return false;
+        }
+
+        let target = event.target.closest('a');
+
+        if (target && contents.contains(target)) {
+          return handleLink(target.getAttribute('href'));
+        }
+    };
+  </script>
   </body>
 </html>

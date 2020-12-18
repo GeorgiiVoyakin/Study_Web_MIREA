@@ -2,9 +2,47 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>task_12</title>
   </head>
   <body>
+    <ul id="list">
+   <li>Пункт 1
+    <ul>
+     <li>Подпункт 1.1</li>
+     <li>Подпункт 1.2  </li>
+    </ul>
+   </li>
+   <li>Пункт 2
+    <ul>
+     <li>Подпункт 2.1</li>
+     <li>Подпункт 2.2</li>
+    </ul>
+   </li>
+  </ul>
+  <script>
+  let elem = document.getElementById('list');
+  elem.onclick = function(event) {
+    let target = event.target;
 
+    if (target.tagName != 'LI') return;
+
+    change_visibility(target);
+  };
+
+  function change_visibility(li) {
+    let children = li.getElementsByTagName('li');
+    if (children.length != 0) {
+      if (children[0].hidden) {
+        for (var i = 0; i < children.length; i++) {
+          children[i].hidden = false;
+        }
+      } else {
+        for (var i = 0; i < children.length; i++) {
+          children[i].hidden = true;
+        }
+      }
+    }
+  }
+  </script>
   </body>
 </html>
